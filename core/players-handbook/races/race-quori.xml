@@ -48,6 +48,7 @@
 	</element>
 	<element name="Steel Mind" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_STEEL_MIND">
 	<description>
+		<p>You have resistance to Psychic damage.</p>
 		</description>
 		<sheet display="false">
 			<description>You have resistance to Psychic damage.</description>
