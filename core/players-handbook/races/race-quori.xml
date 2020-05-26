@@ -151,7 +151,7 @@
 			<description>While transformed, you are intangible. Your smoke body helps you well, and you gain resistance to slashing, piercing, bludgeoning and force damage. Your multiple arms let you be faster, you gain an extra attack per turn. You have advantage on Charisma (Deception) checks.</description>
 		</sheet>
 	</element>
-	<element name="Mask of the Wild" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_IDYLLIC_TOUCH">
+	<element name="Idyllic Touch" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_IDYLLIC_TOUCH">
 		<description>
 			<p> Your unarmed strike deal 1d4+Intelligence modifier force damage instead of normal damage.</p>
 		</description>
