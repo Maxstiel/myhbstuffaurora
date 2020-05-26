@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Quori</name>
+		<update version="0.2">
+			<file name="race-quori.xml" url="https://github.com/Maxstiel/myhbstuffaurora/edit/master/core/players-handbook/races/race-quori.xml" />
+		</update>
+	</info>
+
+	<element name="Quori" type="Race" source="Homebrew" id="ID_RACE_QUORI">
+		<description>
+			<h4>QUORI NAMES</h4>
+			<p>Quori names tend to be monosyllabics and feature hard, rough and hissing consonants. Quoris do not have last names, and their names might be duplicated over the course of years and creation.</p>
+			<span class="feature">Names:</span> Khad, Tari, Meri, Melk, Vakri, Hareth, Ishara, Ashana, Ashtai, Atash.
+			</p>
+			<h4>QUORI TRAITS</h4>
+			<p>Your Quori character shares the following traits with all other Quoris.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Being spirits, dreams and not humanoids, Quoris are usually born adult and do not age. However, they are not immortal. If they die anywhere other than on Dal Quor, they do not regenerate and stay dead.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Children of Quor Tarai, the Quoris tend to follow him, their creator, also named Il-Lashtavar or the Darkness that Dreams. They tend to be evil, or at the very least chaotic. However, some Quoris (such as the ones merging with humanoids to create the kalashtars) might be neutral.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Your size is Medium. To be able to enter the material plane, your Quori character had to merge with an humanoid. While they are not the humanoid itself, they share their size and weight.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Steel Mind.</em></strong> Dreams, Quoris have a mind of steel and are not as easily hurt by psychic shenanigans. You have resistance to psychic damage.</p>
+			<p class="indent"><strong><em>Mind Link.</em></strong> Monstrosities that used to get in everyone's head, you did not lose this ability when merging with the humanoid. You can speak telepathically to creatures in 30ft of you, but they can not talk back and need to understand at least one of your languages to understand you.</p>
+			<p class="indent"><strong><em>Psychic Sight.</em></strong> Creatures of lies, Quoris tend to know easily when people are attempting to lie to them. You gain proficiency in the Insight skill.</p>
+			<p class="indent"><strong><em>Merged Creature.</em></strong> You might have merged with a humanoid, your monstrous side took over and the humanoid soul that once was in your body got destroyed. Your creature type is Aberration.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Quori.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> You are part of one of the subraces of Quoris who might have left Dal Quor. Choose between Tsucora, Hashalaq or Kastheovnal.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Khad, Tari, Meri, Melk, Vakri, Hareth, Ishara, Ashana, Ashtai, Atash.</set>
+			<set name="names" type="female">Khad, Tari, Meri, Melk, Vakri, Hareth, Ishara, Ashana, Ashtai, Atash.</set>
+			<set name="names" type="child">Khad, Tari, Meri, Melk, Vakri, Hareth, Ishara, Ashana, Ashtai, Atash.</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d10">4'6"</set>
+			<set name="weight" modifier="1d4">90 lb.</set>
+		</setters>
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_UA20171113_SUB_RACE_GRUGACH" />
+			<grant type="Language" id="ID_LANGUAGE_QUORI" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_STEEL_MIND" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_MIND_LINK" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PSYCHIC_SIGHT" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_QUORI_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Steel Mind" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_STEEL_MIND">
+		<description>
+			<p>You have resistance to Psychic damage.</p>
+		</description>
+		<sheet display="false">
+			<description>You have resistance to Psychic damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Mind Link" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_MIND_LINK">
+		<description>
+			<p>You can speak telepathically to creatures in 30ft of you, but they can not talk back and need to understand at least one of your languages to understand you.</p>
+		</description>
+		<sheet>
+			<description>You can speak telepathically to creatures in 30ft of you, but they can not talk back and need to understand at least one of your languages to understand you.</description>
+		</sheet>
+	</element>
+	<element name="Psychic Sight" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_PSYCHIC_SIGHT">
+		<description>
+			<p>You gain proficiency in the Insight skill.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in the Insight skill.</description>
+			<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+		</rules>
+		</sheet>
+	</element>
+	<element name="Quori Subrace" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_QUORI_SUBRACE">
+		<description>
+			<p>You are part of one of the subraces of Quoris who might have left Dal Quor. Choose between Tsucora, Hashalaq or Kastheovnal.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Quori Subrace" supports="Quori" />
+		</rules>
+	</element>
+
+	<element name="Tsucora" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_TSUCORA">
+		<supports>Quori</supports>
+		<description>
+			<p>Tsucoras are a weak, common type of quori that specialize in creating fear and nightmares in mortal dreams. Most tsucoras are cruel, calculating schemers; the complex power structures of the dreaming dark require them to treat their brethren as rivals for power and position.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2 and your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Transformation (Tsucora).</em></strong> You gain resistance to poison damage and advantage on Wisdom (Perception) checks relying on sight. While you are transformed, your speed when prone is equal to your base speed +10 and you may use your pincers attack once per turn as a bonus action.</p>
+			<p class="indent"><strong><em>Pincers.</em></strong> Your unarmed strikes deal 1d4+Wisdom modifier psychic damage instead of normal damage.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d10">4'6"</set>
+			<set name="weight" modifier="1d4">90 lb.</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="2" />
+			<stat name="constitution" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_TRANSFORMATION_T" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PINCERS" />
+		</rules>
+	</element> 	
+	<element name="Transformation" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_TRANSFORMATION_T">
+		<description>
+			<p>You gain resistance to poison damage and advantage on Wisdom (Perception) checks relying on sight. While you are transformed, your speed when prone is equal to your base speed +10 and you may use your pincers attack once per turn as a bonus action.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain resistance to poison damage and advantage on Wisdom (Perception) checks relying on sight. While you are transformed, your speed when prone is equal to your base speed +10 and you may use your pincers attack once per turn as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Pincers" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_PINCERS">
+		<description>
+			<p>Your unarmed strikes deal 1d4+Wisdom modifier psychic damage instead of normal damage.</p>
+		</description>
+		<sheet display="false">
+			<description>Your unarmed strikes deal 1d4+Wisdom modifier psychic damage instead of normal damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Hashalaq" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_HASHALAQ">
+		<supports>Quori</supports>
+		<description>
+			<p>Hashalaq, or "dreamstealer" quori are the judges and intellectuals of Dal Quor. Those hashalaq who don't use Inspired to exist on the Material Plane spend their days studying Eberron and the Orrery of the planes. In the power structures of Dal Quor, they frequently serve as advisors to higher ranking Kalaraq Quori. In their role as judges, they are charged with keeping the schemes of lesser quori from disrupting the grand ambitions of Il-Lashtavar. They are masters of history, arcana, insight, and persuasion. The hashalaq are unique amongst quori in that they understand magic rather than purely using psionics.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 2 and Dexterity by 1.</p>
+			<p class="indent"><strong><em>Transformation.</em></strong> While transformed, you are intangible. Your smoke body helps you well, and you gain resistance to slashing, piercing, bludgeoning and force damage. Your multiple arms let you be faster, you gain an extra attack per turn. You have advantage on Charisma (Deception) checks.</p>
+			<p class="indent"><strong><em>Idyllic Touch.</em></strong> Your unarmed strike deal 1d4+Intelligence modifier force damage instead of normal damage.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d10">4'6"</set>
+			<set name="weight" modifier="1d4">100 lb.</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="2" />
+			<stat name="dexterity" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_TRANSFORMATION_H" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_IDYLLIC_TOUCH" />
+		</rules>
+	</element>
+	<element name="Transformation" type="Racial Trait" source="Player’s Handbook" id="ID_TRANSFORMATION_H">
+		<description>
+			<p>While transformed, you are intangible. Your smoke body helps you well, and you gain resistance to slashing, piercing, bludgeoning and force damage. Your multiple arms let you be faster, you gain an extra attack per turn. You have advantage on Charisma (Deception) checks.</p>
+		</description>
+		<sheet display="false">
+			<description>While transformed, you are intangible. Your smoke body helps you well, and you gain resistance to slashing, piercing, bludgeoning and force damage. Your multiple arms let you be faster, you gain an extra attack per turn. You have advantage on Charisma (Deception) checks.</description>
+		</sheet>
+	</element>
+	<element name="Mask of the Wild" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_IDYLLIC_TOUCH">
+		<description>
+			<p> Your unarmed strike deal 1d4+Intelligence modifier force damage instead of normal damage.</p>
+		</description>
+		<sheet>
+			<description> Your unarmed strike deal 1d4+Intelligence modifier force damage instead of normal damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Kastheovnal" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_KASTHEOVNAL">
+		<supports>Quori</supports>
+		<description>
+			<p>A humanoid figure formed of pure shadow looms before you. A nimbus of light surrounds it, shedding no actual light, serving only to highlight the absolute darkness of the being within.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2 and Strength by 1.</p>
+			<p class="indent"><strong><em>Transformation.</em></strong> While transformed, you may empower your weapon attacks to strike twice as hard: you may double the dice of your weapon damage (not of the extra damage you might get) a number of times equal to your Wisdom modifier per long rest. You are immune to psychic damage. If an attack would get you under 0 hit points, you instead stay up with one hit point, are not targetable on the same turn by the same enemy and your transformation ends.</p>
+			<p class="indent"><strong><em>Arcane Blast.</em></strong> You may use your unarmed strike as a bonus action after hitting with a weapon attack. If you chose to do so, the damage changes to 2d4+Wisdom modifier poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d6">4'5"</set>
+			<set name="weight" modifier="1d6">75 lb.</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="2" />
+			<stat name="strength" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_TRANSFORMATION_K" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ARCANE_B" />
+		</rules>
+	</element>
+	<element name="Transformation" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_TRANSFORMATION_K">
+		<description>
+			<p>While transformed, you may empower your weapon attacks to strike twice as hard: you may double the dice of your weapon damage (not of the extra damage you might get) a number of times equal to your Wisdom modifier per long rest. You are immune to psychic damage. If an attack would get you under 0 hit points, you instead stay up with one hit point, are not targetable on the same turn by the same enemy and your transformation ends.</p>
+		</description>
+		<sheet>
+			<description>While transformed, you may empower your weapon attacks to strike twice as hard: you may double the dice of your weapon damage (not of the extra damage you might get) a number of times equal to your Wisdom modifier per long rest. You are immune to psychic damage. If an attack would get you under 0 hit points, you instead stay up with one hit point, are not targetable on the same turn by the same enemy and your transformation ends.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Blast" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_ARCANE_B">
+		<description>
+			<p>You may use your unarmed strike as a bonus action after hitting with a weapon attack. If you chose to do so, the damage changes to 2d4+Wisdom modifier poison damage.</p>
+		</description>
+		<sheet>
+			<description>You may use your unarmed strike as a bonus action after hitting with a weapon attack. If you chose to do so, the damage changes to 2d4+Wisdom modifier poison damage.</description>
+		</sheet>
+	</element>
+</elements>
