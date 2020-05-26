@@ -38,7 +38,6 @@
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_UA20171113_SUB_RACE_GRUGACH" />
-			<grant type="Language" id="ID_LANGUAGE_QUORI" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_STEEL_MIND" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_MIND_LINK" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PSYCHIC_SIGHT" />
