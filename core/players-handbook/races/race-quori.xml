@@ -11,8 +11,7 @@
 		<description>
 			<h4>QUORI NAMES</h4>
 			<p>Quori names tend to be monosyllabics and feature hard, rough and hissing consonants. Quoris do not have last names, and their names might be duplicated over the course of years and creation.</p>
-			<span class="feature">Names:</span> Khad, Tari, Meri, Melk, Vakri, Hareth, Ishara, Ashana, Ashtai, Atash.
-			</p>
+			<span class="feature">Names:</span> Khad, Tari, Meri, Melk, Vakri, Hareth, Ishara, Ashana, Ashtai, Atash.</span>
 			<h4>QUORI TRAITS</h4>
 			<p>Your Quori character shares the following traits with all other Quoris.</p>
 			<p class="indent"><strong><em>Age.</em></strong> Being spirits, dreams and not humanoids, Quoris are usually born adult and do not age. However, they are not immortal. If they die anywhere other than on Dal Quor, they do not regenerate and stay dead.</p>
@@ -143,7 +142,7 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_IDYLLIC_TOUCH" />
 		</rules>
 	</element>
-	<element name="Transformation" type="Racial Trait" source="Player’s Handbook" id="ID_TRANSFORMATION_H">
+	<element name="Transformation" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_TRANSFORMATION_H">
 		<description>
 			<p>While transformed, you are intangible. Your smoke body helps you well, and you gain resistance to slashing, piercing, bludgeoning and force damage. Your multiple arms let you be faster, you gain an extra attack per turn. You have advantage on Charisma (Deception) checks.</p>
 		</description>
