@@ -5,7 +5,7 @@
 		<description>HB content</description>
 		<author>Maxstiel</author>
 		<update version="0.1">
-			<file name="homebrew.index" url="https://github.com/Maxstiel/myhbstuffaurora/edit/master/core/homebrew.index" />
+			<file name="homebrew.index" url="https://github.com/Maxstiel/myhbstuffaurora/blob/master/core/homebrew.index" />
 		</update>
 	</info>
 	<files>
