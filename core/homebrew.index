@@ -4,9 +4,6 @@
 		<name>Homebrew</name>
 		<description>HB content</description>
 		<author>Maxstiel</author>
-		<update version="0.1">
-			<file name="homebrew.index" url="https://github.com/Maxstiel/myhbstuffaurora/blob/master/core/homebrew.index" />
-		</update>
 	</info>
 	<files>
 		<file name="race-quori.xml" url="https://raw.githubusercontent.com/Maxstiel/myhbstuffaurora/master/core/players-handbook/races/race-quori.xml" />
