@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Homebrew</name>
+		<description>HB content</description>
+		<author>Maxstiel</author>
+		<update version="0.1">
+			<file name="dungeon-masters-guide.index" url="https://github.com/Maxstiel/myhbstuffaurora/edit/master/core/homebrew.index" />
+		</update>
+	</info>
+	<files>
+		<file name="quori.xml" url="https://raw.githubusercontent.com/Maxstiel/myhbstuffaurora/master/core/players-handbook/races/race-quori.xml" />
+	</files>
+</index>
